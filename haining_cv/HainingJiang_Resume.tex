@@ -1,0 +1,289 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+
+\usepackage[hmargin=1.0cm, vmargin=0.6cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage{fontspec}
+%\defaultfontfeatures{
+%    Path = /usr/local/texlive/2016/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome}
+
+% definition of \FA as a shortcut to load the Font Awesome font
+\newfontfamily\FA[Path=fontawesome/,Extension=.otf]{FontAwesome}
+
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/LinLibertine/]{LinLibertine_RB} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{4pt} % Spacing around titles
+
+
+% booktabs provides the supplemental tabular eye-candy
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{\leavevmode\llap{\textbullet~}\raggedright}
+%\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Haining (Kate) Jiang}\\[0.5\baselineskip] % Your name
+
+%{\fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR} 120 York St APT 612, Jersey City, NJ 07302}\\
+
+{\ \ \ \faMobilePhone \ \ \  \fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR}(917)941-5101 \ \ \ | \ \ \  
+\  \ \ \faEnvelope \ \ \ haining.jiang@baruchmail.cuny.edu\ \ \ | \ \ \
+\  \ \ \faLinkedin \ \ \ www.linkedin.com/in/katehjiang }
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+\textbf{Baruch College - City University of New York} {\hfill\footnotesize\textsc{| New York, NY}}\\
+M.S. in Information System {\hfill\footnotesize\textsc{| May 2019}}\\ 
+GPA: 4.0/4.0\\
+Data Analytics Concentration \\
+M.S. in Accounting {\hfill\footnotesize\textsc{| May 2016}}\\ 
+GPA: 3.86/4.0\\
+Beta Gamma Sigma Academic Honors
+
+\textbf{Guangdong University of Foreign Studies} {\hfill\footnotesize\textsc{| Guangzhou, China}}\\
+B.S. in Economics {\hfill\footnotesize\textsc{| July 2014}}\\
+GPA: 3.44/4.0\\
+Integrated Excellence Scholarship; Academic Honors\\
+Academic Honors: 2012, 2013\\
+Leadership: Drama Competition, Director; TGC Model Team, Vice President\\
+Exchange Program: Columbia University, GPA: 3.77
+
+%------------------------------------------------
+% WORK EXPERIENCE
+%------------------------------------------------
+
+\section{Professional Experience - Domestic} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+%{\raggedleft\footnotesize\textsc{Sep 2012 -- Sep 2013}\par}
+
+{\raggedright\normalsize
+\textbf{Tax Analyst} {\hfill\footnotesize\textsc{| Current}}\\ 
+\textbf{Morgan Stanley} {\hfill\footnotesize\textsc{| New York, NY}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+
+\item Perform Robotic Testing for automation on 1042S Exception Report, provided automation procedures and QA testing on parallel check-out
+ 
+\item Provide training to and oversee the new hires to support daily tasks including documentation, compliance and reporting
+ 
+\item Support Morgan Stanley Service Network under Client Tax Reporting Department, including W8/W9 instruction, withholding inquiries, 1042S and 1099 information reporting, B-Notice and C-Notice guidance
+
+\item Work on Compliance Project: US T-Bill and foreign CUSIP, W8 Reopen Report, and 1042S Exceptional Audit Report, Reject Report, Control Report 
+
+\item Research the cause of improper tax withholding and guide IT to block/charge withholding by CUSIP or account
+
+\item Report investment income and tax withholding for 1099 filing, extract 1042S detail report, and analyze securities affected by income reallocation and foreign tax gross-up process
+
+\item Assist managers on special projects: analyze annual projected income with pivot table, cross-reference existing accounts with vlookup, and compile multiple worksheet with macro VBA
+
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedright\normalsize
+\textbf{Bank Reconciliation Assistant} {\hfill\footnotesize\textsc{| Jan 2016 -- May 2016}} \\ 
+\textbf{Penmark Management, LLC.} {\hfill\footnotesize\textsc{| New York, NY}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Researched discrepancies and reconciled bank deposits and withdrawals to operating cash in general ledger for over 150 accounts
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+
+{\raggedright\normalsize
+\textbf{Accounts Payable Intern} {\hfill\footnotesize\textsc{| Jan 2015 -- May 2015}} \\ 
+\textbf{Nike Communications INC.} {\hfill\footnotesize\textsc{| New York, NY}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Recorded Accounts Payable transactions and generated invoices for monthly retainer and expenses in QuickBooks Enterprise 
+\item Allocated overhead among clients, monitored budgets, and filed supporting documents adhering to the established expense process  
+\end{itemize}
+
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.47\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+
+\section{Skills} 
+  \textbf{Programming:} SQL, Python, VBA, C++, R\\
+  \textbf{MS Office Suite:} Word, Excel, Access, PowerPoint\\
+  \textbf{Accounting, Auditing \& Tax:} QuickBooks Enterprise, Sharepoint, IPS, MD3, 3D, Java Mainframe \\
+  \textbf{Language:} Mandarin \& Cantonese (Native), English (Fluent)
+
+
+\section{Projects} 
+%------------------------------------------------
+% Project 1
+%------------------------------------------------
+
+{\raggedright\normalsize
+\textbf{Data Analysis with Spreadsheet}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Implemented Python Pandas to parse raw data from NYC Open Data to pre-screen desired data    
+\item Established trend analysis in spreadsheet to visualize data using 3D Map, Pivot Table, VBA Macro, Histogram and Regression
+\end{itemize}
+
+
+%------------------------------------------------
+% Project 1
+%------------------------------------------------
+
+
+{\raggedright\normalsize
+\textbf{Database Development with SQL}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Designed a E-R model with UML notation for auto insurance company to manage policies holders and damage claims    
+\item Normalized the E-R model to improve conciseness and performance and built the database structure in Access using SQL
+\item Imported data and run SQL queries to identify patterns in damage claim, in order to improve policy design and profitability
+
+    
+\end{itemize}
+
+
+{\raggedright\normalsize
+\textbf{Trend Analysis for Investing Instrument with Python}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Developed Pandas and Numpy to parse web data for various investment instrument: stock, gold, oil, bitcoin, etc.    
+\item Transformed unstructured data into comparable format and executed regression analysis between the objective data and SPY500
+
+    
+\end{itemize}
+
+
+\section{Professional Experience - Foreign} 
+
+
+
+%------------------------------------------------
+% WORK EXPERIENCE 4
+%------------------------------------------------
+
+{\raggedright\normalsize
+\textbf{Finance Intern} {\hfill\footnotesize\textsc{| Apr 2014 -- May 2014}} \\ 
+\textbf{ZKING Insurance Co., LTD.} {\hfill\footnotesize\textsc{| Guangzhou, China}}
+}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Collaborated with Finance Manager on annual documentation project to ensure the accuracy of accounting vouchers for Guangdong center and its secondary branches 
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 5
+%------------------------------------------------
+
+{\raggedright\normalsize
+\textbf{Assurance Intern} {\hfill\footnotesize\textsc{| Jan 2014 -- Feb 2014}} \\ 
+\textbf{PricewaterhouseCoopers} {\hfill\footnotesize\textsc{| Guangzhou, China}}
+}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Assisted senior associates with audit procedures, such as vouching invoices to confirm accuracy of accounts payable balances  
+\item Obtained accounting documentation from clients, prepared audit work papers, and consolidated the accounts of subsidiary corporations   
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 6
+%------------------------------------------------
+{\raggedright\normalsize
+\textbf{Multinational Sourcing Service Intern} {\hfill\footnotesize\textsc{| Oct 2012 -- Nov 2012}} \\ 
+\textbf{China Import and Export Fair} {\hfill\footnotesize\textsc{| Guangzhou, China}}
+}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+\item Compiled and analyzed supplier profiles for the managerial team, and organized conferences to promote the attending companies   
+\end{itemize}
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}  

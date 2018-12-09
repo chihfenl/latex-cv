@@ -1,0 +1,464 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+
+% Chih-Feng Lin 's Resume in Latex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+
+\usepackage[hmargin=1.0cm, vmargin=0.6cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
+% definition of \FA as a shortcut to load the Font Awesome font
+\newfontfamily\FA[Path=fontawesome/,Extension=.otf]{FontAwesome}
+
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/LinLibertine/]{LinLibertine_RB} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{4pt} % Spacing around titles
+
+
+% booktabs provides the supplemental tabular eye-candy
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+\newcommand{\tabitem}{\leavevmode\llap{\textbullet~}\raggedright}
+%\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Chih-Feng Lin}\\[0.5\baselineskip] % Your name
+
+{\fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR} 120 York St APT 612, Jersey City, NJ 07302}\\
+
+{\ \ \ \faMobilePhone \ \ \  \fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR}(650)-526-8759 \ \ \ | \ \ \  
+\  \ \ \faEnvelope \ \ \ chihfenl@alumni.cmu.edu\ \ \ | \ \ \   
+\  \ \ \faGithub \ \ \ github.com/ChihFengLin \ \ \ | \ \ \  
+\  \ \ \faLinkedin \ \ \ www.linkedin.com/in/chihfenl }
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+%\begin{tabular}{l} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+
+\textbf{Carnegie Mellon University} {\hfill\footnotesize\textsc{| Pittsburgh, PA}}\\
+M.S. in Electrical and Computer Engineering {\hfill\footnotesize\textsc{| 12/23/2015}}
+%Cum. GPA: 3.8/4.0\\
+	 
+%------------------------------------------------
+% EDUCATION 2
+%------------------------------------------------
+
+
+%\textbf{National Tsing Hua University} \\
+%Sep 2013 -- Feb 2014 | Hsinchu, Taiwan \\ 
+%Credit Certificated Program \\ 
+%Major in Computer Science\\
+%GPA: 4.2/4.3 (OS, Algorithm, Discrete Math)\\
+%\\
+	 
+%------------------------------------------------
+% EDUCATION 3
+%------------------------------------------------
+
+\textbf{National Taiwan University} {\hfill\footnotesize\textsc{| Taipei, Taiwan}}\\
+M.S. in Applied Mechanics {\hfill\footnotesize\textsc{| 07/31/2011}}
+%Concentration in Biomedical Signal Processing\\
+%GPA: 4.0/4.0, Rank: 1/78\\
+	 
+%------------------------------------------------
+% EDUCATION 4
+%------------------------------------------------
+
+\textbf{National Taiwan University} {\hfill\footnotesize\textsc{| Taipei, Taiwan}}\\
+B.S. in Civil Engineering {\hfill\footnotesize\textsc{| 06/30/2009}}
+%Concentration in Theoretical Mechanics\\
+%GPA: 3.77/4.0, Rank: 4/79 \\
+	
+%----------------------------------------------------------------------------------------
+
+%\end{tabular}\\[10pt]
+
+
+%------------------------------------------------
+% WORK EXPERIENCE
+%------------------------------------------------
+
+\section{Professional Experience - Domestic} 
+
+
+%------------------------------------------------
+% WORK EXPERIENCE 0
+%------------------------------------------------
+
+
+{\raggedright\normalsize
+\textbf{VP, Big Data Platform Architect} {\hfill\footnotesize\textsc{| 01/15/2018 -- Present}}\\ 
+\textbf{TD Securities} {\hfill\footnotesize\textsc{| New York, NY}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+
+\item Architect and develope big data backend system to support derivatives valuation service. 
+
+
+\end{itemize}
+
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+
+{\raggedright\normalsize
+\textbf{Data Engineer} {\hfill\footnotesize\textsc{| 02/15/2016 -- 12/31/2017}}\\ 
+\textbf{Bomoda (Acquired by Weber Shandwick)} {\hfill\footnotesize\textsc{| New York, NY}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+
+\item Designed ETL Process: Built a message queue system and API to digest raw data from vendor, integrated with cron jobs to automatically ship raw data to S3 data storage and a real-time error tracking system such as Sentry to improve the reliability of the process.
+
+\item Developed Python And Scala Based Backend System: Transformed the conventional single-machine data processing system into a distributed architecture that is deployed on Amazon AWS cluster using Spark framework, which significantly reduced the computation time from 10 hours to 1 hour and converted the data into clean and structured format.
+
+\item Bridged From Raw Data To Readily Accessible Information: Established the cron jobs that automatically ship cleaned data to the connected BigQuery database and designed all the schemas to normalize data, provided with an easy and queryable interface for data strategy team, which successfully doubled the company's productivity.
+
+\item Managed Product And QA Environment: Utilized Docker and Vagrant to build deployment-like server environment on the local machine. Programmed Ansible playbook to automate ETL process locally and deployed code on the product server after passing testing.
+
+%\item Optimized Codes To Maximize Utility: Guided data scientist and data analyst team to implement machine learning algorithm, and improved %the code to be more concise and efficient in utilizing resources under distributed architecture.
+
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+%{\raggedleft\footnotesize\textsc{Sep 2012 -- Sep 2013}\par}
+
+{\raggedright\normalsize
+\textbf{Software Engineering Intern} {\hfill\footnotesize\textsc{| 06/21/2015 -- 08/15/2015}}\\
+\textbf{Renault Innovation Silicon Valley} {\hfill\footnotesize\textsc{| Sunnyvale, CA}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+
+\item Prototyped In-Car Seat Driver's Heartbeat Detection System: Developed system including hardware and software. Embedded sensor into car seat to capture vibration signal from driver and communicated digital signal with computer via Arduino. 
+\item Created Heartbeat Detection Algorithm: Analyzed the extracted siganl and designed a new algorithm based on time-frequency analysis to convert vibration siganl to human readable heartbeat number. Successfully achieved error rate within 10\% as compared with ground truth.
+%\item Conceptualized Algorithm Into Software Product: Implemented the algorithm based on Python and packaged it with GUI %which makes software more user friendly.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.47\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+
+\begin{tabular}{ l p{6cm}}
+  \textbf{Language:} & Mandarin (Native), English (Fluent)\\
+  \textbf{Programming:} & Python, Scala, Java, SQL, Bash, C, C++, Matlab\\
+  \textbf{BigData:} & Hadoop, EMR, Spark, SparkSQL\\
+  \textbf{DataAnalytics:} & Machine Learning, Signal Processing\\
+  \textbf{Database:} & BigQuery, MySQL, MongoDB, HBase, S3\\
+  \textbf{DevOP:} & Amazon AWS, Ansible, Docker, Vagrant, Jenkins, NSQ, Kubernetes\\
+  \textbf{WebServer:} & Tornado, Flask, Tomcat\\
+  \textbf{Others:} & UnitTest, Git, Maven, Vim, Sentry, \LaTeX
+\end{tabular}
+
+%\begin{spacing}{1.3}
+
+%\textbf{Language:} Mandarin (Native), English (Fluent)\\
+%\textbf{Programming:} Python, Java, C, C++, Bash, SQL, Matlab, Scala\\
+%\textbf{BigData:} Hadoop, EMR, Spark, SparkSQL, SparkStreaming\\
+%\textbf{DataAnalytics:} Machine Learning, Signal Processing\\
+%\textbf{Database:} MySQL, MongoDB, BigQuery, HBase, Hive, S3\\
+%\textbf{DevOP:} AWS, Ansible, Docker, Vagrant, Jenkins, NSQ\\
+%\textbf{WebServer:} Tornado, Flask, Tomcat\\
+%\textbf{Others:} Unit Test, Git, Maven, Vim, \LaTeX, Sentry\\
+
+%\end{spacing}
+
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience - Foreign} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedright\normalsize
+\textbf{Software Engineer} {\hfill\footnotesize\textsc{| 09/15/2012 -- 09/30/2013}} \\ 
+\textbf{Innolux Corporation} {\hfill\footnotesize\textsc{| Tainan, Taiwan}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+
+\item Conceptualized and implemented new algorithm for Low Color Shift technique of oblique viewing angle of LCD using C and Python. Significantly reduced the color shift on oblique view by 30\%
+
+\end{itemize}
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedright\normalsize
+\textbf{Research Development Engineer} {\hfill\footnotesize\textsc{| 08/31/2010 -- 09/01/2012}} \\ 
+\textbf{Shin Kong Memorial Hospital} {\hfill\footnotesize\textsc{| Taipei, Taiwan}}}
+
+\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
+\setlength\itemsep{1pt}
+
+\item Explored novel signal processing techniques applied in the sleep research field. Successfully created a new algorithm and python-based diagnosis model for Alzheimer’s via sleep EEG. (http://goo.gl/k5Yu9i)
+
+\item Published a new feature of sleep EEG regarding non-dementia controls and Alzheimer’s patients (Abstract has been issued on the journal of Sleep and Biological Rhythm).
+
+\end{itemize}
+
+
+\section{Selected Projects} 
+
+
+%------------------------------------------------
+% Project 1
+%------------------------------------------------
+
+
+%{\raggedright\normalsize \textbf{Modeling Text Using Matrix Factorization with Distributed Stochastic Gradient Descent on Spark} \hfill\footnotesize\textsc{| Oct -- Nov 2015}\par}
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Implemented stochastic gradient descent for matrix factorization on RCV1 news document which contains word ID, document ID and TFIDF score. Successfully deployed it into different clusters on Spark and achieved low matrix reconstruction error about 0.6453. Significantly improved the computation efficiency by 100% based on this parallelization method.  
+%\\[0.01\baselineskip]
+%\end{itemize}
+
+
+
+%------------------------------------------------
+% Project 1
+%------------------------------------------------
+
+
+%{\raggedright\normalsize \textbf{Classifying Language Label for Large Scale Wikipedia Dataset - Using Memory Efficient Method}} %\hfill\footnotesize\textsc{| Aug -- Oct 2015}\par}
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Constructed Streaming Naive Bayes algorithm under MapReduce framework and deployed it into Hadoop file system to make classification. %(92\% classification accuracy on testing data)
+%\item Implemented Naive Bayes algorithm on GuineaPig (Apache Pig-like python library) and succeeded in improving classification accuracy from %92\% to 97\% on testing data.
+%\item Conducted Stochastic Gradient Descent Logistic Regression for multiclass classification. Developed hashing trick and streaming format to %improve computation and memory used efficiency (82.93\% multiclass classification accuracy on testing data). 
+%\\[0.01\baselineskip]
+%\end{itemize}
+
+
+%------------------------------------------------
+% Project 1
+%------------------------------------------------
+
+
+{\raggedright\normalsize \textbf{Predicting Aircraft Fuel Consumption Using Deep Learning - NASA Sponsored Project}} %\hfill\footnotesize\textsc{| Jan -- May 2015}\par}
+
+\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+\setlength\itemsep{1pt}
+\item Established Stacked Autoencoder (SAE) model with 182 aircraft feed-in features and constructed the training workflow for multi-layer network architecture, which can be effectively applied to other prediction tasks. Succeeded in improving prediction rate by 40\% on testing data as compared with pure linear regression model. (https://goo.gl/tcTZdR)
+\\[0.01\baselineskip]
+\end{itemize}
+
+
+%------------------------------------------------
+% Project 4
+%------------------------------------------------
+
+
+%{\raggedright\normalsize \textbf{Automatic Sleep Staging System based on Evolutionary Algorithm and SVM} \hfill\footnotesize\textsc{| Sep -- Dec 2014}\par}
+
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Implemented the Python algorithm to detect Wake Stage via the machine-learning Evolutionary Strategy and Genetic Algorithm for feature selection combined with SVM classifier. Successfully extracted dominant features from massive EEG data and achieved 90.82\% classification rate. (https://goo.gl/508hUp)\\[0.01\baselineskip]
+%\end{itemize}
+
+%------------------------------------------------
+% Project 5
+%------------------------------------------------
+
+
+{\raggedright\normalsize \textbf{Cloud-Based Twitter Analytics Web Service}} %\hfill\footnotesize\textsc{| Sep -- Dec 2014}\par}
+
+\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+\setlength\itemsep{1pt}
+\item Analyzed Twitter information and conducted the ETL process. Extracted one terabyte of Twitter data based on Python language. Transformed data into the correct format using the MapReduce architecture (Hadoop framework) and stored the data in the AWS S3 Bucket. Loaded parsed data into MySQL database on the Amazon EC2 instance (Linux environment).
+\item Designed MySQL table schema and specialized in performance adjusting, query optimization and index tuning. Successfully improved query response efficiency by horizontally scaling the MySQL database instance with Elastic Load Balancer (ELB).\\[0.01\baselineskip]
+\end{itemize}
+
+
+%------------------------------------------------
+% Project 3
+%------------------------------------------------
+
+
+%{\raggedright\normalsize \textbf{Java Based Car Configuration System} \hfill\footnotesize\textsc{| Jan -- Mar 2015}\par}
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Created a KellyBlueBook-like web application deployed on the Tomcat. Constructed frontend by JSP that user can use interface to select car related information to claculate total cost and programmed servlets to communicate with Java based backend.
+%\item Conducted strict proxy design pattern that all interfaces and abstract classes are carefully designed, only exposing necessary APIs to customers.
+%\item Implemented multithreading and custom exception handling function that enable web application to be scalable and have self-healing mechanism. 
+%\\[0.01\baselineskip]
+%\end{itemize}
+
+
+%------------------------------------------------
+% Project 2
+%------------------------------------------------
+
+
+%{\raggedright\normalsize \textbf{Android Development - DiscountShop} \hfill\footnotesize\textsc{| Mar -- May 2015}\par}
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Implemented a mobile application on Android that retailer can post their discount items to the system and consumer can get the %item list with respective geo-location information shown on the google map.
+%\item Utilized tier approach to design software architecture and adopted factory design pattern to reduce coupling between each %layers. Programmed Android side function such as dynamic item list and Backend Service side such as using servlet to communicate with %mobile device via JSON format.  
+%\\[0.01\baselineskip]
+%\end{itemize}
+
+
+
+
+%------------------------------------------------
+% Project 3
+%------------------------------------------------
+
+
+%{\raggedright\normalsize 
+%\textbf{NGram and Language Model Generation} \hfill\footnotesize\textsc{| Sep -- Dec 2014}\par}
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Programmed the MapReduce job under native Java framework to generate 5-gram outputs stored in Hadoop Distributed %File System (HDFS). Established a statistical language model using 5-gram data and executed HBase "bulk loading" to write %model into the database.\\[0.01\baselineskip]
+%\end{itemize}
+
+%------------------------------------------------
+% Project 4
+%------------------------------------------------
+
+
+%{\raggedright\normalsize 
+%\textbf{NeverQ - WindowsPhone Development} \hfill\footnotesize\textsc{| March 2014}\par}
+
+%\begin{itemize}[leftmargin=*, topsep=1pt, partopsep=1.5pt]
+%\setlength\itemsep{1pt}
+%\item Designed an app to solve a restaurant queueing problem and help customers efficiently utilize their waiting time.
+% Programmed on WindowsPhone based on C\#. 
+%\item Placed in 3rd out of 10 in 2014 Microsoft Image Cup Competition, final round of Taiwan region.\\[0.01\baselineskip]
+%\end{itemize}
+
+
+%----------------------------------------------------------------------------------------	
+
+
+
+%\end{tabular}
+
+
+
+%	Publications
+%----------------------------------------------------------------------------------------
+
+%\section{Publications} 
+
+%\begin{tabular}{p{8cm}}
+%Rayleigh P-Y Chiang*, \textbf{C-F Lin*}, N. Powell \\
+%\textit{“The Scope of Modern Sleep Technology.”} Book Chapter of Introduction to Modern Sleep Technology, Springer, 2012 %(*Co-author) http://ppt.cc/2fTp \\
+%\\
+%\textbf{C-F Lin}, Rayleigh P-Y Chiang, and P-L Liu.\\
+%\textit{“New EEG Markers of Alzheimer’s Disease for the Elderly.”} Poster session presented at the 6th World Congress 
+%of the World Sleep Federation, 2011. (Kyoto, Japan)\\
+%http://goo.gl/k5Yu9i\\
+
+%\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+	
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
