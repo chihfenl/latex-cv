@@ -71,7 +71,6 @@
 \newcommand{\tabitem}{\leavevmode\llap{\textbullet~}\raggedright}
 %\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
-
 \begin{document}
 
 \color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
@@ -82,47 +81,51 @@
 
 \par{\centering{\sffamily\Huge Chih-Feng Lin}\\[0.5\baselineskip] % Your name
 
-{\fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR} 120 York St APT 612, Jersey City, NJ 07302}\\
+{\fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR} 90 Christopher Columbus Dr, Apt 2411, Jersey City, NJ 07302}\\
 
 {\ \ \ \faMobilePhone \ \ \  \fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR}(650)-526-8759 \ \ \ | \ \ \  
 \  \ \ \faEnvelope \ \ \ chihfenl@alumni.cmu.edu\ \ \ | \ \ \   
 \  \ \ \faGithub \ \ \ github.com/ChihFengLin \ \ \ | \ \ \  
 \  \ \ \faLinkedin \ \ \ www.linkedin.com/in/chihfenl }
 	
-%----------------------------------------------------------------------------------------
-
-\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
-\vspace{0pt} % Trick for alignment
+%---------------------------------------------------------------------------------------
 
 \section{Education}
 
 \input{materials/educations.tex}
 
+\vspace{-\abovedisplayskip}
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+
+
 \section{Professional Experience} 
 
 \input{materials/experiences/td_securities.tex}
-\input{materials/experiences/bomoda.tex}
-\input{materials/experiences/renault.tex}
+
+\section{Selected Projects} 
+
+\input{materials/projects/nasa_deeplearning.tex}
+\input{materials/projects/cloud_computing.tex}
 
 \end{minipage} % End the left-hand side of the page
 \hfill
 \begin{minipage}[t]{0.47\textwidth} % Start the right-hand side of the page
 \vspace{0pt} % Trick for alignment
 
+
+
+\section{Previous Professional Experience}
+
+\input{materials/experiences/bomoda.tex}
+\input{materials/experiences/renault.tex}
+
+
 \section{Skills} 
 
 \input{materials/skills.tex}
 
-\section{Professional Experience - Foreign}
-
-\input{materials/experiences/chimei.tex}
-\input{materials/experiences/shinkong_hospital.tex}
-
-\section{Selected Projects} 
-
-\input{materials/projects/nasa_deeplearning.tex}
-\input{materials/projects/cloud_computing.tex}
-	
 \end{minipage} % End right-hand side of the page
 
 \end{document}  
