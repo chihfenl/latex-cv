@@ -18,24 +18,27 @@
 
 \usepackage[hmargin=1.0cm, vmargin=0.6cm]{geometry} % Document margins
 
-\usepackage{marvosym} % Required for symbols in the colored box
-\usepackage{ifsym} % Required for symbols in the colored box
-
-\usepackage{fontspec}
+% Removed unused symbol packages and duplicate fontspec
 \usepackage{fontawesome}
 
-% definition of \FA as a shortcut to load the Font Awesome font
-\newfontfamily\FA[Path=fontawesome/,Extension=.otf]{FontAwesome}
+% FontAwesome icons loaded via \usepackage{fontawesome}
 
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+\usepackage{microtype}
 
-% Fonts and tweaks for XeLaTeX
+% Fonts and tweaks for XeLaTeX (reverted to LinLibertine)
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/LinLibertine/]{LinLibertine_RB} % Font for your name at the top
+\setromanfont[
+  Mapping=tex-text,
+  Path=fonts/LinLibertine/,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path=fonts/LinLibertine/]{LinLibertine_RB.otf}
 %\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 % Colors for links, text and headings
@@ -60,72 +63,74 @@
 \usepackage{titlesec} % Allows creating custom \section's
 
 % Format of the section titles
-\titleformat{\section}{\color{headings}
-\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+\titleformat{\section}{\color{headings}\sffamily\Large\mdseries\raggedright}{}{0em}{}[\color{black}\titlerule]
 
-\titlespacing{\section}{0pt}{0pt}{4pt} % Spacing around titles
+\titlespacing{\section}{0pt}{0pt}{2pt} % Tighter spacing around section titles
 
 
 % booktabs provides the supplemental tabular eye-candy
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{\leavevmode\llap{\textbullet~}\raggedright}
+\setlist[itemize]{leftmargin=*, topsep=2pt, partopsep=2.5pt, itemsep=0.3em}
 %\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+% Add paracol package
+% Removed unused paracol (two-column) package
 
 \begin{document}
 
 \color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
 
 %----------------------------------------------------------------------------------------
-%	TITLE
+%   TITLE
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\sffamily\Huge Chih-Feng Lin}\\[0.5\baselineskip] % Your name
-
-{\fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR} 90 Christopher Columbus Dr, Apt 2411, Jersey City, NJ 07302}\\
-
-{\ \ \ \faMobilePhone \ \ \  \fontspec[Path = fonts/LinLibertine/]{LinLibertine_DR}(650)-526-8759 \ \ \ | \ \ \  
-\  \ \ \faEnvelope \ \ \ chihfenl@alumni.cmu.edu\ \ \ | \ \ \   
-\  \ \ \faGithub \ \ \ github.com/ChihFengLin \ \ \ | \ \ \  
-\  \ \ \faLinkedin \ \ \ www.linkedin.com/in/chihfenl }
+% Name
+\par{\centering{\sffamily\Huge Chih-Feng Lin}\\[0.5\baselineskip]
+% Contact Info (centered tabular)
+\begin{center}
+\begin{tabular}{ c c c c c }
+  \faMapMarker~New York, NY &
+  \faMobilePhone~\href{tel:+16505268759}{(650)~526-8759} &
+  \faEnvelope~\href{mailto:chihfenl@alumni.cmu.edu}{chihfenl@alumni.cmu.edu} &
+  \faGithub~\href{https://github.com/ChihFengLin}{github.com/ChihFengLin} &
+  \faLinkedin~\href{https://www.linkedin.com/in/chihfenl}{linkedin.com/in/chihfenl} \\
+\end{tabular}
+\end{center}
+}
 	
 %---------------------------------------------------------------------------------------
 
-\section{Education}
+% --- Summary ---
+\section{Summary}
+\begin{flushleft}
+    Staff-level \textbf{AI/ML Platform Engineer} with proven expertise in \textbf{data engineering}, \textbf{distributed systems}, and \textbf{machine learning infrastructure}. Architected Autodesk’s first \textbf{Feature Store} and \textbf{Labeling Platform}, and built a decentralized \textbf{Data Mesh–based ML playground} to scale model development. Shaped the roadmap to extend the platform into \textbf{vector databases} and \textbf{vector data lakes} for future ML/LLM workloads. Previously built a global \textbf{big data ecosystem} at TD Securities and delivered scalable \textbf{ETL/ML pipelines} at Weber Shandwick. Recognized for blending \textbf{technical depth} with \textbf{leadership}, including hiring, cross-team collaboration, and delivering secure, enterprise-grade platforms.
+\end{flushleft}
 
-\input{materials/educations.tex}
+% ===================== Modern Resume Layout =====================
 
-\vspace{-\abovedisplayskip}
-\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
-\vspace{0pt} % Trick for alignment
+% --- Skills (full width) ---
+\vspace{1.5em}
+\section{Skills}
+\input{materials/skills.tex}
 
+% --- Professional Experience ---
+\vspace{1.5em}
+\section{Professional Experience}
 
+\input{materials/experiences/autodesk.tex}
 
-\section{Professional Experience} 
+\vspace{0.5em}
 
 \input{materials/experiences/td_securities.tex}
 
-\section{Selected Projects} 
-
-\input{materials/projects/nasa_deeplearning.tex}
-\input{materials/projects/cloud_computing.tex}
-
-\end{minipage} % End the left-hand side of the page
-\hfill
-\begin{minipage}[t]{0.47\textwidth} % Start the right-hand side of the page
-\vspace{0pt} % Trick for alignment
-
-
-
-\section{Previous Professional Experience}
+\vspace{0.5em}
 
 \input{materials/experiences/bomoda.tex}
-\input{materials/experiences/renault.tex}
 
-
-\section{Skills} 
-
-\input{materials/skills.tex}
-
-\end{minipage} % End right-hand side of the page
+% --- Education (full width) ---
+\vspace{1.5em}
+\section{Education}
+\input{materials/educations.tex}
 
 \end{document}  

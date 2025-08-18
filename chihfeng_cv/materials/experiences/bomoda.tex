@@ -1,16 +1,31 @@
-{\raggedright\normalsize
-\textbf{Data Engineer} {\hfill\footnotesize\textsc{| 02/15/2016 -- 01/01/2018}}\\ 
-\textbf{Bomoda (Acquired by Weber Shandwick)} {\hfill\footnotesize\textsc{| New York, NY}}}
+\vspace{0.3em}
+\noindent\textbf{\sffamily Data Engineer} \hfill \textit{Feb 2016 -- Jan 2018} \\
+\noindent{\sffamily Bomoda (Acquired by Weber Shandwick)} \hfill \textit{New York, NY}
+\vspace{0.1em}
 
 \begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
-\setlength\itemsep{1pt}
+\setlength\itemsep{0.3em}
 
-\item Designed ETL Process: Built a message queue system and API to digest raw data from vendor, integrated with cron jobs to automatically ship raw data to S3 data storage and a real-time error tracking system such as Sentry to improve the reliability of the process.
+\item \textbf{Data Infrastructure \& ETL:}
+    \begin{itemize}[leftmargin=1.5em]
+        \setlength\itemsep{0.3em}
+        \item Implemented \textbf{vendor ingestion pipelines} via APIs and message queues with automated error tracking (\textbf{Sentry}), improving data reliability.
+        \item Replatformed workloads from single-machine to \textbf{AWS-based Spark clusters}, reducing processing time from 10 hours to 1 hour and enabling near real-time scaling.
+        \item Produced \textbf{analytics-ready datasets} in \textbf{MySQL}, \textbf{MongoDB}, and \textbf{BigQuery}, doubling analyst productivity.
+    \end{itemize}
 
-\item Developed Python And Scala Based Backend System: Transformed the conventional single-machine data processing system into a distributed architecture that is deployed on Amazon AWS cluster using Spark framework, which significantly reduced the computation time from 10 hours to 1 hour and converted the data into clean and structured format.
+\item \textbf{Platform Engineering:}
+    \begin{itemize}[leftmargin=1.5em]
+        \setlength\itemsep{0.3em}
+        \item Containerized production and QA with \textbf{Docker} and \textbf{Vagrant}, ensuring reproducible deployments.
+        \item Automated ETL deployments with \textbf{Ansible} playbooks, reducing manual errors and accelerating release cycles.
+    \end{itemize}
 
-\item Bridged From Raw Data To Readily Accessible Information: Established the cron jobs that automatically ship cleaned data to the connected BigQuery database and designed all the schemas to normalize data, provided with an easy and queryable interface for data strategy team, which successfully doubled the company's productivity.
-
-\item Managed Product And QA Environment: Utilized Docker and Vagrant to build deployment-like server environment on the local machine. Programmed Ansible playbook to automate ETL process locally and deployed code on the product server after passing testing.
+\item \textbf{Collaboration \& Optimization:}
+    \begin{itemize}[leftmargin=1.5em]
+        \setlength\itemsep{0.3em}
+        \item Partnered with data scientists to embed ML algorithms into pipelines, optimizing for \textbf{scalability and resource efficiency}.
+        \item Established the foundation for \textbf{scalable MLOps}, bridging raw data ingestion with production-grade analytics pipelines.
+    \end{itemize}
 
 \end{itemize}
