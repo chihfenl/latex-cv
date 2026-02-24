@@ -16,7 +16,7 @@
 \documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
 
 
-\usepackage[hmargin=1.0cm, vmargin=0.6cm]{geometry} % Document margins
+\usepackage[hmargin=1.0cm, vmargin=0.5cm]{geometry} % Document margins (tight for 2-page fit)
 
 % Removed unused symbol packages and duplicate fontspec
 \usepackage{fontawesome}
@@ -38,7 +38,7 @@
   ItalicFont=LinLibertine_RI.otf,
   BoldItalicFont=LinLibertine_RBI.otf
 ]{LinLibertine_R.otf}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path=fonts/LinLibertine/]{LinLibertine_RB.otf}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path=fonts/LinLibertine/, BoldFont=LinLibertine_RB.otf]{LinLibertine_RB.otf}
 %\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 % Colors for links, text and headings
@@ -49,7 +49,7 @@
 \definecolor{headings}{HTML}{701112} % Dark red color for headings
 % Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
 
-\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor, pdfborder={0 0 0}} % Links without visible border
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -65,13 +65,13 @@
 % Format of the section titles
 \titleformat{\section}{\color{headings}\sffamily\Large\mdseries\raggedright}{}{0em}{}[\color{black}\titlerule]
 
-\titlespacing{\section}{0pt}{0pt}{2pt} % Tighter spacing around section titles
+\titlespacing{\section}{0pt}{0.4em}{0.35em} % Space before/after section (2-page fit)
 
 
 % booktabs provides the supplemental tabular eye-candy
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
 \newcommand{\tabitem}{\leavevmode\llap{\textbullet~}\raggedright}
-\setlist[itemize]{leftmargin=*, topsep=2pt, partopsep=2.5pt, itemsep=0.3em}
+\setlist[itemize]{leftmargin=*, topsep=1pt, partopsep=1.5pt, itemsep=0.22em}
 %\newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
 % Add paracol package
@@ -85,51 +85,47 @@
 %   TITLE
 %----------------------------------------------------------------------------------------
 
-% Name
-\par{\centering{\sffamily\Huge Chih-Feng Lin}\\[0.5\baselineskip]
-% Contact Info (centered tabular)
+% Name and contact
 \begin{center}
-\begin{tabular}{ c c c c c }
-  \faMapMarker~New York, NY &
-  \faMobilePhone~\href{tel:+16505268759}{(650)~526-8759} &
-  \faEnvelope~\href{mailto:chihfenl@alumni.cmu.edu}{chihfenl@alumni.cmu.edu} &
-  \faGithub~\href{https://github.com/ChihFengLin}{github.com/ChihFengLin} &
-  \faLinkedin~\href{https://www.linkedin.com/in/chihfenl}{linkedin.com/in/chihfenl} \\
-\end{tabular}
+  \sffamily\Huge Chih-Feng Lin\\[0.4\baselineskip]
+  \normalfont\normalsize
+  \begin{tabular}{ c c c c c }
+    \faMapMarker~New York, NY &
+    \faMobilePhone~\href{tel:+16505268759}{(650)~526-8759} &
+    \faEnvelope~\href{mailto:chihfenl@alumni.cmu.edu}{chihfenl@alumni.cmu.edu} &
+    \faGithub~\href{https://github.com/ChihFengLin}{github.com/ChihFengLin} &
+    \faLinkedin~\href{https://www.linkedin.com/in/chihfenl}{linkedin.com/in/chihfenl} \\
+  \end{tabular}
 \end{center}
-}
-	
+\vspace{0.15em}
 %---------------------------------------------------------------------------------------
 
 % --- Summary ---
 \section{Summary}
 \begin{flushleft}
-    Staff-level \textbf{AI/ML Platform Engineer} with proven expertise in \textbf{data engineering}, \textbf{distributed systems}, and \textbf{machine learning infrastructure}. Architected Autodesk’s first \textbf{Feature Store} and \textbf{Labeling Platform}, and built a decentralized \textbf{Data Mesh–based ML playground} to scale model development. Shaped the roadmap to extend the platform into \textbf{vector databases} and \textbf{vector data lakes} for future ML/LLM workloads. Previously built a global \textbf{big data ecosystem} at TD Securities and delivered scalable \textbf{ETL/ML pipelines} at Weber Shandwick. Recognized for blending \textbf{technical depth} with \textbf{leadership}, including hiring, cross-team collaboration, and delivering secure, enterprise-grade platforms.
+\sloppy
+    Staff-level \textbf{AI/ML \& Data Platform Engineer} with deep experience in \textbf{ML infrastructure}, \textbf{data engineering}, and \textbf{distributed systems}. At Autodesk, drove core services for a \textbf{unified inference gateway} (SageMaker, Bedrock, custom backends); the company’s first \textbf{Feature Store} and \textbf{Labeling Platform}; and scaled a \textbf{Data Mesh} ML environment to hundreds of tenants. Drove roadmap for \textbf{vector DB} and \textbf{vector data lakes} for LLM and embedding workloads. Previously built enterprise \textbf{data platforms} and big data ecosystems at TD Securities and scalable \textbf{ETL/ML pipelines} at Weber Shandwick. Combines \textbf{technical depth} with \textbf{leadership}—hiring, cross-team collaboration, and secure, enterprise-grade platform delivery.
 \end{flushleft}
 
 % ===================== Modern Resume Layout =====================
 
 % --- Skills (full width) ---
-\vspace{1.5em}
+\vspace{0.6em}
 \section{Skills}
 \input{materials/skills.tex}
 
 % --- Professional Experience ---
-\vspace{1.5em}
+\vspace{0.6em}
 \section{Professional Experience}
 
 \input{materials/experiences/autodesk.tex}
-
-\vspace{0.5em}
-
+\vspace{0.25em}
 \input{materials/experiences/td_securities.tex}
-
-\vspace{0.5em}
-
+\vspace{0.25em}
 \input{materials/experiences/bomoda.tex}
 
 % --- Education (full width) ---
-\vspace{1.5em}
+\vspace{0.6em}
 \section{Education}
 \input{materials/educations.tex}
 

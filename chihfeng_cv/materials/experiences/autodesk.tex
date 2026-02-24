@@ -1,47 +1,49 @@
-\vspace{0.3em}
-\noindent\textbf{\sffamily Principal Software Engineer, AI/ML Data Systems} \hfill \textit{Aug 2022 -- Present} \\
+\vspace{0.15em}
+\noindent\textbf{\sffamily Principal Software Engineer, AI/ML Platform} \hfill \textit{Aug 2022 -- Present} \\
 \noindent{\sffamily Autodesk} \hfill \textit{San Francisco, CA | Remote}
-\vspace{0.1em}
+\vspace{0.05em}
 
-\begin{itemize}[leftmargin=*, topsep=2pt, partopsep=2.5pt]
-\setlength\itemsep{0.3em}
+\begin{itemize}[leftmargin=1.25em, topsep=1pt, partopsep=1.5pt]
+\setlength\itemsep{0.22em}
+
+\item \textbf{Inference Backend Enablement:}
+    \begin{itemize}[leftmargin=2.25em]
+        \setlength\itemsep{0.2em}
+        \item \textbf{Unified inference gateway:} Delivered the \textbf{Go} proxy layer for the platform's unified inference gateway, unifying \textbf{AWS SageMaker}, \textbf{Bedrock}, and custom endpoints and integrating with \textbf{AuthN/AuthZ} to expose a single gateway for all inference backends.
+        \item \textbf{Async inference at scale:} Shipped \textbf{async inference} support behind the proxy layer, enabling larger payloads and longer runtimes and unlocking use cases such as \textbf{video processing} and long-running model inference.
+        \item \textbf{Batch inference and cost optimization:} Established the \textbf{SageMaker Batch Transform} workflow and upstream compute integration, reducing per-unit inference cost and standardizing batch ML pipelines across teams.
+    \end{itemize}
+\vspace{0.4em}
 
 \item \textbf{Enterprise Feature Store Platform:}
-    \begin{itemize}[leftmargin=1.5em]
-        \setlength\itemsep{0.3em}
-        \item \textbf{Standardized feature reuse and governance:} Architected Autodesk’s first \textbf{centralized Feature Store} on \textbf{AWS SageMaker}, codifying feature publishing, access controls, and cross-team reuse.
-        \item \textbf{Scaled batch and streaming:} Engineered automated publishing across \textbf{batch} (\textbf{Spark}, \textbf{Ray}) and \textbf{streaming} (\textbf{Flink}, \textbf{Kafka}) pipelines.
-        \item \textbf{Accelerated training and serving integration:} Shipped a \textbf{Python SDK} that unifies feature discovery and retrieval across online and batch inference, reducing integration effort and time-to-production for ML teams.
-        \item \textbf{Ensured compliance:} Implemented a \textbf{GDPR-compliant retention \& deletion} workflow with \textbf{Spark} and \textbf{Airflow}, meeting regulatory obligations at enterprise scale.
-        \item \textbf{Hardened multi-tenant access:} Defined a \textbf{FastAPI-based service layer} for feature group lifecycle and access provisioning, with per-tenant encryption and fine-grained access control.
-        \item \textbf{Enabled LLM readiness:} Extended the architecture with an \textbf{OpenSearch-based Vector DB} and \textbf{Vector Data Lake}, enabling unified management of structured features and embeddings.
+    \begin{itemize}[leftmargin=2.25em]
+        \setlength\itemsep{0.2em}
+        \item \textbf{Standardized feature reuse and governance:} Architected Autodesk’s first \textbf{centralized Feature Store} on \textbf{AWS SageMaker}, codifying feature publishing, access controls, and cross-team reuse. Shipped a \textbf{Python SDK} for feature discovery and retrieval across online and batch inference.
+        \item \textbf{Batch \& streaming:} Engineered automated publishing across \textbf{batch} (\textbf{Spark}, \textbf{Ray}) and \textbf{streaming} (\textbf{Flink}, \textbf{Kafka}) pipelines.
+        \item \textbf{Compliance:} Implemented \textbf{GDPR-compliant retention \& deletion} workflow with \textbf{Spark} and \textbf{Airflow}, meeting regulatory obligations at enterprise scale.
+        \item \textbf{Multi-tenant access:} Defined \textbf{FastAPI}-based service layer for feature group lifecycle and access provisioning, with per-tenant encryption and fine-grained access control.
+        \item \textbf{LLM readiness:} Extended the architecture with \textbf{OpenSearch}-based Vector DB and \textbf{Vector Data Lake}, enabling unified management of structured features and embeddings.
     \end{itemize}
+\vspace{0.4em}
 
 \item \textbf{Unified Labeling Platform:}
-    \begin{itemize}[leftmargin=1.5em]
-        \setlength\itemsep{0.3em}
+    \begin{itemize}[leftmargin=2.25em]
+        \setlength\itemsep{0.2em}
         \item \textbf{Enterprise adoption in 6 weeks:} Delivered a production-ready \textbf{MVP in 6 weeks}, achieving enterprise-wide adoption and winning a \textbf{company-wide platform excellence award}.
         \item \textbf{Secure multi-tenant foundations:} Founded and led Autodesk’s first \textbf{multi-tenant labeling platform} on \textbf{AWS SageMaker GroundTruth}, provisioned with \textbf{Terraform} for secure and scalable operations.
-        \item \textbf{Faster annotation throughput:} Integrated \textbf{Autodesk Viewer} into labeling workflows, supporting proprietary data formats and speeding up annotation pipelines.
-        \item \textbf{Versioned, event-driven data flow:} Designed \textbf{post-annotation workflows} with \textbf{event-driven architecture}, ensuring version control and seamless delivery of labeled data into the Feature Store.
+        \item \textbf{Annotation throughput:} Integrated \textbf{Autodesk Viewer} into labeling workflows, supporting proprietary data formats and speeding up annotation pipelines.
+        \item \textbf{Event-driven data flow:} Designed \textbf{post-annotation workflows} with \textbf{event-driven architecture}, ensuring version control and seamless delivery of labeled data into the Feature Store.
         \item \textbf{Human-in-the-loop at scale:} Championed roadmap to integrate \textbf{Active Learning} and \textbf{Amazon Augmented AI (A2I)} for model-assisted annotation and human-in-the-loop validation.
     \end{itemize}
+\vspace{0.4em}
 
 \item \textbf{Platform Architecture \& Leadership:}
-    \begin{itemize}[leftmargin=1.5em]
-        \setlength\itemsep{0.3em}
-        \item \textbf{Governed ML environments at scale:} Architected a decentralized \textbf{SageMaker Studio ML environment} based on \textbf{Data Mesh} principles, enabling distributed compute with centralized governance for hundreds of tenants.
-        \item \textbf{Compliance by design:} Developed security-hardened \textbf{Terraform modules} for \textbf{EMR} and \textbf{EKS}, enabling compliant deployments of \textbf{Airflow}, \textbf{Ray}, and \textbf{Spark}.
-        \item \textbf{Self-service analytics:} Built \textbf{AWS Service Catalog} integration for on-demand \textbf{Spark clusters} with \textbf{CloudFormation}, enabling self-service analytics at enterprise scale.
-        \item \textbf{Data contracts and catalog standards:} Standardized ingestion via data contracts, raising catalog consistency and data quality for AI/ML in the central lake.
+    \begin{itemize}[leftmargin=2.25em]
+        \setlength\itemsep{0.2em}
+        \item \textbf{Data Mesh ML environment:} Architected a decentralized \textbf{SageMaker Studio ML environment} based on \textbf{Data Mesh} principles, enabling distributed compute with centralized governance for hundreds of tenants.
+        \item \textbf{IaC \& self-service:} Developed security-hardened \textbf{Terraform modules} for \textbf{EMR} and \textbf{EKS}, enabling compliant deployments of \textbf{Airflow}, \textbf{Ray}, and \textbf{Spark}. Built \textbf{AWS Service Catalog} integration for on-demand \textbf{Spark clusters} with \textbf{CloudFormation}.
+        \item \textbf{Data contracts \& catalog:} Standardized ingestion via data contracts, raising catalog consistency and data quality for AI/ML in the central lake.
         \item \textbf{Team building:} Functioned as \textbf{hiring manager}, partnering with \textbf{HR} to define role requirements, lead candidate evaluation, and build a high-performing AI/ML Data Systems team.
-    \end{itemize}
-
-\item \textbf{Selected Impact:}
-    \begin{itemize}[leftmargin=1.5em]
-        \setlength\itemsep{0.3em}
-        \item Enterprise-wide adoption of Feature Store and Labeling Platform; accelerated feature reuse and time-to-production across teams.
-        % Optionally populate with concrete figures, e.g., "X+ teams, Y+ feature groups, Z TB/day, P95 < L ms, N% TTM reduction".
     \end{itemize}
 
 \end{itemize}

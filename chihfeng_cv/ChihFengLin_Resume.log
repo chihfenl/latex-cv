@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  18 AUG 2025 14:15
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.4.16)  24 FEB 2026 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,17 +600,31 @@ LaTeX Info: Redefining \rmfamily on input line 40.
 . LinLibertine_RB scale = 0.9907601551955624.
 .................................................
 .................................................
+. fontspec info: "set-scale"
+. 
+. LinLibertine_RB scale = 0.9907601551955624.
+.................................................
+.................................................
+. fontspec info: "set-scale"
+. 
+. LinLibertine_RB scale = 0.9907601551955624.
+.................................................
+.................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LinLibertine_RB.otf(0)' created for font 'LinLibertine_RB.otf'
 . with options
-. [Mapping=tex-text,Ligatures=TeX,Scale=MatchLowercase,Mapping=tex-text,Path=fonts/LinLibertine/].
+. [Mapping=tex-text,Ligatures=TeX,Scale=MatchLowercase,Mapping=tex-text,Path=fonts/LinLibertine/,BoldFont=LinLibertine_RB.otf].
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
 . <->s*[0.9907601551955624]"[fonts/LinLibertine/LinLibertine_RB.otf]/OT:script=latn;language=DFLT;mapping=tex-text;"
 . - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[0.9907601551955624]"[fonts/LinLibertine/LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[0.9907601551955624]"[fonts/LinLibertine/LinLibertine_RB.otf]/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
 . <->s*[0.9907601551955624]"[fonts/LinLibertine/LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
 .................................................
 LaTeX Info: Redefining \sffamily on input line 41.
@@ -798,14 +812,14 @@ LaTeX Font Info:    ... okay on input line 80.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(17.07182pt, 760.82634pt, 17.07182pt)
+* v-part:(T,H,B)=(14.22636pt, 766.51726pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=760.82634pt
+* \textheight=766.51726pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-92.19817pt
+* \topmargin=-95.04362pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -908,13 +922,13 @@ LaTeX Info: Redefining \nameref on input line 80.
 \openout3 = `ChihFengLin_Resume.out'.
 
 LaTeX Font Info:    Font shape `TU/LinLibertine_RB.otf(0)/m/n' will be
-(Font)              scaled to size 9.90753pt on input line 89.
+(Font)              scaled to size 9.90753pt on input line 90.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinLibertine_RB.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LinLibertine_RB.otf(0)/m/n' will be
-(Font)              scaled to size 24.64993pt on input line 89.
+(Font)              scaled to size 24.64993pt on input line 90.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1086,41 +1100,42 @@ Package microtype Info: Character `\textgreater ' is missing
 (microtype)             in font `\TU/FontAwesome(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/LinLibertine_RB.otf(0)/m/n' will be
-(Font)              scaled to size 14.26683pt on input line 105.
+(Font)              scaled to size 14.26683pt on input line 104.
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
-) (./materials/skills.tex) (./materials/experiences/autodesk.tex
+) (./materials/skills.tex
+Overfull \hbox (17.51051pt too wide) in paragraph at lines 2--10
+[]  
+ []
 
-LaTeX Font Warning: Font shape `TU/LinLibertine_RB.otf(0)/bx/n' undefined
-(Font)              using `TU/LinLibertine_RB.otf(0)/m/n' instead on input line 2.
-
-[1
-
-]) (./materials/experiences/td_securities.tex
+) (./materials/experiences/autodesk.tex
 LaTeX Font Info:    Font shape `TU/LinLibertine_RB.otf(0)/bx/n' will be
 (Font)              scaled to size 9.90753pt on input line 2.
-) (./materials/experiences/bomoda.tex) (./materials/educations.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
+ [1
+
+]) (./materials/experiences/td_securities.tex) (./materials/experiences/bomoda.tex) (./materials/educations.tex
+Overfull \hbox (4.8635pt too wide) in paragraph at lines 4--4
+[][]| 
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./ChihFengLin_Resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `ChihFengLin_Resume.out' has not changed.
 (rerunfilecheck)             Checksum: 37F3387EC8A0A3DB74EB2F965372566F.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 25581 strings out of 492970
- 467892 string characters out of 6133938
- 579673 words of memory out of 5000000
- 29416 multiletter control sequences out of 15000+600000
- 531134 words of font info for 43 fonts, out of 8000000 for 9000
+ 25585 strings out of 492970
+ 468115 string characters out of 6133938
+ 580386 words of memory out of 5000000
+ 29419 multiletter control sequences out of 15000+600000
+ 531199 words of font info for 44 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 47i,11n,116p,10474b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,116p,10474b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on ChihFengLin_Resume.pdf (2 pages).
